@@ -93,7 +93,7 @@ public class Function {
                     authLevel = AuthorizationLevel.ANONYMOUS)
                     HttpRequestMessage<Optional<String>> request,
             final ExecutionContext context) {
-                  String connectionString = "DefaultEndpointsProtocol=https;AccountName=enzenpocsalesforceb1de;AccountKey=tGsh4EaxYKRL584agN0ee0fGMLCgNJr9lcW7Ezw172K+5juyu/DQdn42P8GI6sf+J4AlDbcKTGbc+AStzs7o3g==;EndpointSuffix=core.windows.net";
+                  
                     String containerName = "psraudit";
   BlobServiceClient blobServiceClient = new BlobServiceClientBuilder().connectionString(connectionString).buildClient();
     BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(containerName);
